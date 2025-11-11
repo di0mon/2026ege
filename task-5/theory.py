@@ -44,3 +44,28 @@ num_hex="f01"
 print(int(num_bin, 2))
 print(int(num_tri, 3))
 print(int(num_hex, 16))
+
+#Срезы
+data = "1234567"
+#Взятие двух первых цифр
+print(data[:2])
+#Взятие без двух первых цифр
+print(data[2:])
+#Взятие двух последних цифр
+print(data[-2:])
+#Взятие без двух последних цифр
+print(data[:-2])
+
+#Сумма цифр числа
+#двоичная система
+num_1 ="1010"
+sum_1 = num_1.count("1")
+
+#Любая система до 10 включительно
+num_2 ="1210"
+sum_2 = sum(map(int, num_2))
+
+#Любая система до 36 включительно
+num_3 ="AF5"
+sum_3 = sum(map(lambda x: int(x, 36), num_3))
+print(sum_3)
