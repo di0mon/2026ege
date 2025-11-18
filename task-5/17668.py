@@ -1,0 +1,9 @@
+ans=[]
+for N in range(28, 50):
+    R = f"{N:b}"
+    if R.count("1") % 2 == 0:
+        R = "10" + R[2:] + "0"
+    else:
+        R = "11" + R[2:] + "1"
+    R = int(R, 2)
+    print(R)
