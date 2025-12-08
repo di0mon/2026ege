@@ -1,6 +1,6 @@
 for N in range(1, 100000):
     R = f"{N:b}"
-    if R.count("1") % 2 ==0:
+    if R.count("1") % 2 == 0:
         R = "1" + R[2:] + "10"
     else:
         R = "10" + R[:2] + "1"

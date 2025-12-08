@@ -1,0 +1,1 @@
+def conv(num,sus):
