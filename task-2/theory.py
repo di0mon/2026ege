@@ -33,3 +33,15 @@
 #                     print(x, y, w, z)
 #                 # Строки вперемешку
 #                     print(x, y, w, z)
+#args
+#при условии что f1=test1 по колву символов.
+def f1(a,b,c):
+    return a+b+c
+test1 =[1,2,3]
+print(f1(*test1))
+
+#kwargs
+def f2(a,b):
+    return a/b
+test2={"a":7,"b":2}
+print(f2(**test2))
