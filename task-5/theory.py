@@ -34,7 +34,7 @@ def convert2(num, sus):
     while num !=0:
         res += alph[num % sus]
         num //= sus
-    return res[::-1]
+    return res[::-1] if res else"0"
 
 #Перевод в 10 систему
 num_bin="101"
