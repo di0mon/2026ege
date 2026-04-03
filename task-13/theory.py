@@ -26,3 +26,7 @@ hosts = net.hosts()
 
 # Общее кол-во ip-адресов в сети с учетом зарезервированных
 num_addresses = net.num_addresses
+# Возвращает маску сети
+mask = net.netmask
+
+
